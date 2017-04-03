@@ -27,7 +27,7 @@
         <!-- YOUR CONTENT GOES HERE -->
         <h1>Quantifying the Cost of Feminine Hygiene</h1>
         <br>
-        <h3>By Priscilla Alibi and Ryan Kelley</h3>
+        <h3>By Priscilla Alabi and Ryan Kelley</h3>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -35,53 +35,53 @@
         <form id="calculator">
             <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p class="calc-text">The number of cycles you have in a year:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of cycles you have in a year:<input type="text" id="cycles" placeholder="Enter a whole number"></p>
             <br>
-            <p class="calc-text">The number of tampons you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of tampons you use in an average cycle:<input type="text" id="tampons" placeholder="Enter a whole number"></p>
             <br>
-            <p class="calc-text">The number of pads you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of pads you use in an average cycle:<input type="text" id="pads" placeholder="Enter a whole number"></p>
             <br>
             <p class="calc-text">What state do you live in?<select name="State" placeholder="State">
-                                            <option value="Alaska">Alaska</option>
-                                            <option value="Arizona">Arizona</option>
-                                            <option value="Arkansas">Arkansas</option>
-                                            <option value="California">California</option>
-                                            <option value="Colorado">Colorado</option>
-                                            <option value="Connecticut">Connecticut</option>
-                                            <option value="Florida">Florida</option>
-                                            <option value="Georgia">Georgia</option>
-                                            <option value="Hawaii">Hawaii</option>
-                                            <option value="Idaho">Idaho</option>
-                                            <option value="Illinois">Illinois</option>
-                                            <option value="Indiana">Indiana</option>
-                                            <option value="Iowa">Iowa</option>
-                                            <option value="Kansas">Kansas</option>
-                                            <option value="Kentucky">Kentucky</option>
-                                            <option value="Louisiana">Louisiana</option>
-                                            <option value="Maine">Maine</option>
-                                            <option value="Michigan">Michigan</option>
-                                            <option value="Mississippi">Mississippi</option>
-                                            <option value="Misouri">Misouri</option>
-                                            <option value="Nebraska">Nebraska</option>
-                                            <option value="Nevada">Nevada</option>
-                                            <option value="New Mexico">New Mexico</option>
-                                            <option value="North Carolina">North Carolina</option>
-                                            <option value="North Dakota">North Dakota</option>
-                                            <option value="Ohio">Ohio</option>
-                                            <option value="Oklahoma">Oklahoma</option>
-                                            <option value="Rhode Island">Rhode Island</option>
-                                            <option value="South Carolina">South Carolina</option>
-                                            <option value="South Dakota">South Dakota</option>
-                                            <option value="Tennessee">Tennessee</option>
-                                            <option value="Texas">Texas</option>
-                                            <option value="Utah">Utah</option>
-                                            <option value="Vermont">Vermont</option>
-                                            <option value="Virginia">Virginia</option>
-                                            <option value="Washington">Washington</option>
-                                            <option value="West Virginia">West Virginia</option>
-                                            <option value="Wisconsin">Wisconsin</option>
-                                            <option value="Wyoming">Wyoming</option>
-                                            <option value="District of Columbia">District of Columbia</option>
+                                            <option value="Alaska" data-tax=".04">Alaska</option>
+                                            <option value="Arizona" data-tax=".056">Arizona</option>
+                                            <option value="Arkansas" data-tax=".065" >Arkansas</option>
+                                            <option value="California" data-tax=".0725">California</option>
+                                            <option value="Colorado" data-tax=".039">Colorado</option>
+                                            <option value="Connecticut" data-tax=".0635">Connecticut</option>
+                                            <option value="Florida" data-tax=".06">Florida</option>
+                                            <option value="Georgia" data-tax=".04">Georgia</option>
+                                            <option value="Hawaii" data-tax=".04">Hawaii</option>
+                                            <option value="Idaho" data-tax=".06">Idaho</option>
+                                            <option value="Illinois" data-tax=".0625">Illinois</option>
+                                            <option value="Indiana" data-tax=".07">Indiana</option>
+                                            <option value="Iowa" data-tax=".06">Iowa</option>
+                                            <option value="Kansas" data-tax=".065">Kansas</option>
+                                            <option value="Kentucky" data-tax=".06">Kentucky</option>
+                                            <option value="Louisiana" data-tax=".05">Louisiana</option>
+                                            <option value="Maine" data-tax=".055">Maine</option>
+                                            <option value="Michigan" data-tax=".06">Michigan</option>
+                                            <option value="Mississippi" data-tax=".07">Mississippi</option>
+                                            <option value="Misouri" data-tax=".04225">Misouri</option>
+                                            <option value="Nebraska" data-tax=".055">Nebraska</option>
+                                            <option value="Nevada" data-tax=".0685">Nevada</option>
+                                            <option value="New Mexico" data-tax=".05125">New Mexico</option>
+                                            <option value="North Carolina" data-tax=".0475">North Carolina</option>
+                                            <option value="North Dakota" data-tax="0.05">North Dakota</option>
+                                            <option value="Ohio" data-tax="0.0575">Ohio</option>
+                                            <option value="Oklahoma" data-tax="0.045">Oklahoma</option>
+                                            <option value="Rhode Island" data-tax="0.07">Rhode Island</option>
+                                            <option value="South Carolina" data-tax="0.06">South Carolina</option>
+                                            <option value="South Dakota" data-tax="0.045">South Dakota</option>
+                                            <option value="Tennessee" data-tax="0.07">Tennessee</option>
+                                            <option value="Texas" data-tax="0.0625">Texas</option>
+                                            <option value="Utah" data-tax="0.0595">Utah</option>
+                                            <option value="Vermont" data-tax="0.06">Vermont</option>
+                                            <option value="Virginia" data-tax="0.53">Virginia</option>
+                                            <option value="Washington" data-tax="0.065">Washington</option>
+                                            <option value="West Virginia" data-tax="0.06">West Virginia</option>
+                                            <option value="Wisconsin" data-tax="0.05">Wisconsin</option>
+                                            <option value="Wyoming" data-tax="0.04">Wyoming</option>
+                                            <option value="District of Columbia" data-tax="0.575">District of Columbia</option>
                                             </select>
               <br>
               <br>
