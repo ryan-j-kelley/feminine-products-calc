@@ -27,21 +27,21 @@
         <!-- YOUR CONTENT GOES HERE -->
         <h1>Quantifying the Cost of Feminine Hygiene</h1>
         <br>
-        <h2>By Priscilla Alibi and Ryan Kelley</h2>
+        <h3>By Priscilla Alibi and Ryan Kelley</h3>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <br>
         <form id="calculator">
-            <h2>How Much Will You Pay in Taxes on Tampons and Pads?<h2>
+            <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p>The number of cycles you have in a year:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of cycles you have in a year:<input type="text" placeholder="Enter a whole number"></p>
             <br>
-            <p>The number of tampons you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of tampons you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
             <br>
-            <p>The number of pads you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of pads you use in an average cycle:<input type="text" placeholder="Enter a whole number"></p>
             <br>
-            <p>What state do you live in?<select name="State" placeholder="State">
+            <p class="calc-text">What state do you live in?<select name="State" placeholder="State">
                                             <option value="Alaska">Alaska</option>
                                             <option value="Arizona">Arizona</option>
                                             <option value="Arkansas">Arkansas</option>
@@ -66,9 +66,31 @@
                                             <option value="Nevada">Nevada</option>
                                             <option value="New Mexico">New Mexico</option>
                                             <option value="North Carolina">North Carolina</option>
+                                            <option value="North Dakota">North Dakota</option>
+                                            <option value="Ohio">Ohio</option>
+                                            <option value="Oklahoma">Oklahoma</option>
+                                            <option value="Rhode Island">Rhode Island</option>
+                                            <option value="South Carolina">South Carolina</option>
+                                            <option value="South Dakota">South Dakota</option>
+                                            <option value="Tennessee">Tennessee</option>
+                                            <option value="Texas">Texas</option>
+                                            <option value="Utah">Utah</option>
+                                            <option value="Vermont">Vermont</option>
+                                            <option value="Virginia">Virginia</option>
+                                            <option value="Washington">Washington</option>
+                                            <option value="West Virginia">West Virginia</option>
+                                            <option value="Wisconsin">Wisconsin</option>
+                                            <option value="Wyoming">Wyoming</option>
+                                            <option value="District of Columbia">District of Columbia</option>
                                             </select>
               <br>
-            <input type="button" value="Calculate">
+              <br>
+            <input id="button" type="button" value="Calculate">
+            <br>
+            <br>
+            <br>
+            <input type="text" placeholder="Tampon tax">
+            <input type="text" placeholder="Pad tax">
 
 
         </form>

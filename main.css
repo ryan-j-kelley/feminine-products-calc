@@ -56,6 +56,32 @@ table {
 
 /* BEGIN YOUR STYLES HERE */
 
+#calculator {
+    background-color: #FFBCC6;
+    padding: 12px;
+    position: relative;
+}
+
+#calc-title {
+    color: #7F2A4E;
+}
+
+.calc-text {
+    color: #7F2A4E;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#button {
+    background-color: #7F2A4E;
+    color: #FFBCC6;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    position: absolute;
+    left: 15%;
+}
+
 
 /* Start your base/mobile styles here */
 
@@ -73,4 +99,7 @@ html, body {
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+
 }
