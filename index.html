@@ -35,13 +35,15 @@
         <form id="calculator">
             <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p class="calc-text">The number of cycles you have in a year:<input type="text" id="cycles" placeholder="Enter a whole number"></p>
+            <p class="calc-text">The number of 20-count boxes you buy in a year:</p>
             <br>
-            <p class="calc-text">The number of tampons you use in an average cycle:<input type="text" id="tampons" placeholder="Enter a whole number"></p>
+            <p class="calc-text">Tampons: <input type="text" id="tampons" placeholder="Enter a whole number"></p>
             <br>
-            <p class="calc-text">The number of pads you use in an average cycle:<input type="text" id="pads" placeholder="Enter a whole number"></p>
+            <p class="calc-text">Pads: <input type="text" id="pads" placeholder="Enter a whole number"></p>
             <br>
-            <p class="calc-text">What state do you live in?<select name="State" placeholder="State">
+            <p class="calc-text">How old are you? <input type="text" id="age" placeholder="Enter your age"></p>
+            <br>
+            <p class="calc-text">Which state do you live in?<select name="State" placeholder="State">
                                             <option value="Alaska" data-tax=".04">Alaska</option>
                                             <option value="Arizona" data-tax=".056">Arizona</option>
                                             <option value="Arkansas" data-tax=".065" >Arkansas</option>
@@ -89,9 +91,7 @@
             <br>
             <br>
             <br>
-            <input type="text" placeholder="Tampon tax">
-            <input type="text" placeholder="Pad tax">
-
+            <p class="answer-text">You could spend $<span id="total"></span> in sales tax on tampons and pads before menopause.</p>
 
         </form>
 

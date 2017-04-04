@@ -82,6 +82,12 @@ table {
     left: 15%;
 }
 
+.answer-text {
+    color: #7F2A4E;
+    font-size: 24px;
+    display: none;
+}
+
 
 /* Start your base/mobile styles here */
 
