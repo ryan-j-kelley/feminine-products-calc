@@ -56,6 +56,18 @@ table {
 
 /* BEGIN YOUR STYLES HERE */
 
+h1 {
+    padding: 12px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+.main-text {
+    padding: 10px;
+}
+
 #calculator {
     background-color: #FFBCC6;
     padding: 12px;
@@ -82,10 +94,14 @@ table {
     left: 15%;
 }
 
-.answer-text {
+.answer {
     color: #7F2A4E;
     font-size: 24px;
     display: none;
+}
+
+.answer-show {
+    display: block;
 }
 
 
