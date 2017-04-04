@@ -32,10 +32,11 @@
         <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <br>
-        <form id="calculator">
-            <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
+        <div id="calculator">
+            <form>
+                <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p class="calc-text">The number of 20-count boxes you buy in a year:</p>
+            <p class="calc-text">Estimate the number of 20-count boxes you buy in a year:</p>
             <br>
             <p class="calc-text">Tampons: <input type="text" id="tampons" placeholder="Enter a whole number"></p>
             <br>
@@ -44,6 +45,7 @@
             <p class="calc-text">How old are you? <input type="text" id="age" placeholder="Enter your age"></p>
             <br>
             <p class="calc-text">Which state do you live in?<select id="state" name="State" placeholder="State">
+                                            <option selected value="Choose a state">Select a state</option>
                                             <option value="Alaska" data-tax=".04">Alaska</option>
                                             <option value="Arizona" data-tax=".056">Arizona</option>
                                             <option value="Arkansas" data-tax=".065" >Arkansas</option>
@@ -92,8 +94,12 @@
             <br>
             <br>
             <p class="answer" id="final-answer">You could spend $<span id="total"></span> in sales tax on tampons and pads before menopause.</p>
+            <!-- <p class="answer" id="past-answer">You may have already spent $<span id="past"></span> in sales tax on tampons and pads. -->
+          </form>
+          <br>
+        </div>
 
-        </form>
+        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
 
