@@ -78,6 +78,11 @@ h3 {
     color: #7F2A4E;
 }
 
+#state {
+    font-size: 14px;
+    border: 2px;
+}
+
 .calc-text {
     color: #7F2A4E;
     font-size: 16px;
@@ -102,6 +107,14 @@ h3 {
 
 .answer-show {
     display: block;
+}
+
+#total {
+    background-color: #F2E205;
+}
+
+#past {
+    background-color: #F2E205;
 }
 
 

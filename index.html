@@ -36,15 +36,15 @@
             <form>
                 <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p class="calc-text">Estimate the number of 20-count boxes you buy in a year:</p>
+            <p class="calc-text">Estimate the number of 36-count boxes you buy in a month:</p>
             <br>
-            <p class="calc-text">Tampons: <input type="text" id="tampons" placeholder="Enter a whole number"></p>
+            <p class="calc-text">Tampons: <input type="text" id="tampons" value="0"></p>
             <br>
-            <p class="calc-text">Pads: <input type="text" id="pads" placeholder="Enter a whole number"></p>
+            <p class="calc-text">Pads: <input type="text" id="pads" value="0"></p>
             <br>
             <p class="calc-text">How old are you? <input type="text" id="age" placeholder="Enter your age"></p>
             <br>
-            <p class="calc-text">Which state do you live in?<select id="state" name="State" placeholder="State">
+            <p class="calc-text">Which state do you live in? <select id="state" name="State" placeholder="State">
                                             <option selected value="Choose a state">Select a state</option>
                                             <option value="Alaska" data-tax=".04">Alaska</option>
                                             <option value="Arizona" data-tax=".056">Arizona</option>
@@ -80,12 +80,12 @@
                                             <option value="Texas" data-tax="0.0625">Texas</option>
                                             <option value="Utah" data-tax="0.0595">Utah</option>
                                             <option value="Vermont" data-tax="0.06">Vermont</option>
-                                            <option value="Virginia" data-tax="0.53">Virginia</option>
+                                            <option value="Virginia" data-tax="0.053">Virginia</option>
                                             <option value="Washington" data-tax="0.065">Washington</option>
                                             <option value="West Virginia" data-tax="0.06">West Virginia</option>
                                             <option value="Wisconsin" data-tax="0.05">Wisconsin</option>
                                             <option value="Wyoming" data-tax="0.04">Wyoming</option>
-                                            <option value="District of Columbia" data-tax="0.575">District of Columbia</option>
+                                            <option value="District of Columbia" data-tax="0.0575">District of Columbia</option>
                                             </select>
               <br>
               <br>
@@ -94,13 +94,16 @@
             <br>
             <br>
             <p class="answer" id="final-answer">You could spend $<span id="total"></span> in sales tax on tampons and pads before menopause.</p>
-            <!-- <p class="answer" id="past-answer">You may have already spent $<span id="past"></span> in sales tax on tampons and pads. -->
+            <br>
+            <p class="answer" id="past-answer">You may have already spent $<span id="past"></span> in sales tax on tampons and pads.
           </form>
           <br>
         </div>
 
         <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        <!-- tampon price = https://www.walmart.com/ip/Tampax-Pearl-Plastic-Light-Absorbency-Unscented-Tampons-36-count/10849162 -->
+        <!-- pad price = https://www.walmart.com/ip/Always-Maxi-Regular-with-Wings-Unscented-Pads-36-Count/1146543 -->
 
 
         <!-- Your javascript should be called here -->
