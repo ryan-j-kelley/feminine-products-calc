@@ -56,20 +56,72 @@ table {
 
 /* BEGIN YOUR STYLES HERE */
 
+h1 {
+    padding: 12px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+.main-text {
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+/*add line height for readability*/
+
+img {
+    max-width: 100%;
+}
+
+#pullquote {
+    font-size: 2em;
+    font-weight: 900;
+    width: 70%;
+    border-left-style: solid;
+    /*gives it a solid line on the left for separation*/
+    border-width: 10px;
+    border-color: #FFBCC6;
+    padding: 20px 0px 20px 30px;
+    margin-left: 20px;
+}
+
+cite {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 #calculator {
     background-color: #FFBCC6;
     padding: 12px;
-    position: relative;
 }
 
 #calc-title {
     color: #7F2A4E;
 }
 
+#state {
+    font-size: 14px;
+    border: 2px;
+    /*border makes the box show up in mobile*/
+}
+
 .calc-text {
     color: #7F2A4E;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
+    margin-left: 20px;
+}
+
+.format {
+    display: inline-block;
+    /*allows you to stack the items and align them*/
+}
+
+input, select {
+    margin-left: 35px;
 }
 
 #button {
@@ -78,8 +130,32 @@ table {
     height: 30px;
     width: 100px;
     font-size: 14px;
-    position: absolute;
-    left: 15%;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.answer {
+    color: #7F2A4E;
+    font-size: 24px;
+    display: none;
+    /*hides the answer text until button is clicked*/
+}
+
+.answer-show {
+    display: block;
+    /*shows the answer text once the button is clicked*/
+}
+
+#total {
+    background-color: #F2E205;
+}
+
+#past {
+    background-color: #F2E205;
+}
+
+#caption {
+    color: gray;
 }
 
 
@@ -95,11 +171,60 @@ html, body {
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    #main-image {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .main-text {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        line-height: 20px;
+    }
+    h1, h3 {
+        padding: 12px;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    #pullquote {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #calculator {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #button {
+        margin-left: 140px;
+    }
 }
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-}
-
-
+    #main-image {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .main-text {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        line-height: 20px;
+    }
+    h1, h3 {
+        padding: 12px;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    #pullquote {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #calculator {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #button {
+        margin-left: 140px;
+    }
 }
