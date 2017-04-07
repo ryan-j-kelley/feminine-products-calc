@@ -25,11 +25,17 @@
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
-        <img id="main-image" src="images/products.jpg">
-        <h1>Quantifying the Cost of Feminine Hygiene</h1>
+
+        <figure id="main-image">
+            <img src="images/products.jpg" />
+            <figcaption id="caption">Feminine care products on shelves in a convenient store.<span id="credit"> (Photo by Priscilla Alabi)</span>
+            </figcaption>
+        </figure>
+
+        <br>
+        <h1>It adds up: How much do you pay in tampon taxes?</h1>
         <br>
         <h3>By Priscilla Alabi and Ryan Kelley</h3>
-        <br>
 
 
         <br>
@@ -40,7 +46,7 @@
 
         <p class="main-text">&#34;It’s kind of sick that we tax these specific products,&#34; said Catalina Bertani, a student at the SUNY Downstate Midwifery Program. As a woman who devotes her work to women’s healthcare, Bertani said it is &#34;fundamentally unfair that
             [women] are singled out to be taxed. And low-income women feel it the most.&#34;</p>
-
+        <!-- &#34; is for quotaion marks -->
         <br>
 
         <div id="pullquote">
@@ -56,29 +62,60 @@
         <br>
 
         <p class="main-text">This same issue inspired Laura Strausfeld of the advocacy organization Period Equity to attend Columbia Law School 26 years ago. &#34;I recall buying tampons and chapstick and noticing that I was taxed on the tampons and not on the chapstick.
-            It was empowering as a law student to be able to look up the law and confirm my suspicion that there was no good reason for chapstick to be exempted from sales tax (on the ostensible ground it has a medical use) and not tampons,&#34; she said.</p>
+            It was empowering as a law student to be able to look up the law and confirm my suspicion that there was no good reason for chapstick to be exempted from sales tax (on the ostensible ground it has a medical use) and not tampons,&#34; she said
+            to her colleagues at <a href="http://www.feministlawprofessors.com/2016/11/interview-laura-strausfeld-new-york-attorney-challenging-tampon-tax/"> Feminist Law Professors</a>.</p>
 
-        <p class="main-text">Strausfeld filed a class action lawsuit against New York state on behalf of five women in March 2016. A few months later in June, New York became one of seven states to actively end the tampon tax.</p>
+        <p class="main-text">Strausfeld filed a class action lawsuit against New York state on behalf of five women in March 2016. A few months later in June, New York became one of seven states to actively end the tampon tax. Maryland, Massachusetts, Pennsylvania, Minnesota,
+            New Jersey, Connecticut and Illinois are the others, while Alaska, Delaware, New Hampshire, Oregon and Montana have no sales tax.</p>
 
         <p class="main-text">However, there are 39 states (including DC) remaining. Below is a calculator to help you figure how much money you may spend on tampon and sanitary taxes in your state over a lifetime.</p>
 
+        <br>
         <br>
 
         <div id="calculator">
             <form>
                 <h2 id="calc-title">How Much Will You Pay in Taxes on Tampons and Pads?<h2>
               <br>
-            <p class="calc-text">Out of a pack of 36, estimate the number of each product you use in a cycle:</p>
+            <p class="calc-text">Out of a box of 36, estimate the number of each product you use in a cycle:</p>
+
             <br>
-            <p class="calc-text">Tampons: <input type="text" id="tampons" value="0"></p>
+
+            <div class="format">
+              <p class="calc-text">Tampons:</p>
+              <input type="text" id="tampons" value="0">
+            </div>
+<!-- putting each field in a div allows you to stack them via inline-block -->
             <br>
-            <p class="calc-text">Pads: <input type="text" id="pads" value="0"></p>
             <br>
-            <p class="calc-text">How many cycles do you have in a year? <input type="text" id="cycles" placeholder="Enter number of cycles"></p>
+
+            <div class="format">
+              <p class="calc-text">Pads:</p>
+              <input type="text" id="pads" value="0">
+            </div>
+
             <br>
-            <p class="calc-text">How old are you? <input type="text" id="age" placeholder="Enter your age"></p>
             <br>
-            <p class="calc-text">Which state do you live in? <select id="state" name="State" placeholder="State">
+
+            <div class="format">
+              <p class="calc-text">How many cycles do you have in a year?</p>
+              <input type="text" id="cycles" placeholder="Enter number of cycles">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="format">
+              <p class="calc-text">How old are you?</p>
+              <input type="text" id="age" placeholder="Enter your age">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="format">
+              <p class="calc-text">Which state do you live in?</p>
+              <select id="state" name="State" placeholder="State">
                                             <option selected value="Choose a state">Select a state</option>
                                             <option value="Alaska" data-tax=".04">Alaska</option>
                                             <option value="Arizona" data-tax=".056">Arizona</option>
@@ -120,6 +157,7 @@
                                             <option value="Wyoming" data-tax="0.04">Wyoming</option>
                                             <option value="District of Columbia" data-tax="0.0575">District of Columbia</option>
                                             </select>
+                                          </div>
               <br>
               <br>
             <input id="button" type="button" value="Calculate">
@@ -133,7 +171,10 @@
           <br>
         </div>
 
-        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="main-text"><em>This calculator is based on the price per towel in a 36 count box of <a href="https://www.walmart.com/ip/Always-Maxi-Regular-with-Wings-Unscented-Pads-36-Count/1146543"> pads</a> and <a href="https://www.walmart.com/ip/Tampax-Pearl-Plastic-Light-Absorbency-Unscented-Tampons-36-count/10849162">tampons</a> from Walmart. That number is then multiplied by the user’s chosen numbers of each product used, number of cycles in a year, <a href="https://taxfoundation.org/state-and-local-sales-tax-rates-in-2017/">state tax rate</a>, and age as it relates to the average age of first menstruation and menopause. It is then adjusted by the long-term <a href="https://inflationdata.com/inflation/inflation_rate/long_term_inflation.asp"> inflation rate.</a></em></p>
+
+        <br>
+        <br>
 
         <!-- tampon price = https://www.walmart.com/ip/Tampax-Pearl-Plastic-Light-Absorbency-Unscented-Tampons-36-count/10849162 -->
         <!-- pad price = https://www.walmart.com/ip/Always-Maxi-Regular-with-Wings-Unscented-Pads-36-Count/1146543 -->
