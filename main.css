@@ -68,6 +68,26 @@ h3 {
     padding: 10px;
 }
 
+#main-image {
+    max-width: 100%;
+}
+
+#pullquote {
+    font-size: 2em;
+    font-weight: 900;
+    width: 70%;
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: #FFBCC6;
+    padding: 20px 0px 20px 30px;
+    margin-left: 20px;
+}
+
+cite {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 #calculator {
     background-color: #FFBCC6;
     padding: 12px;
