@@ -1,5 +1,6 @@
 var pads,
 	tampons,
+	cycles,
 	age,
 	stateTax,
 	taxPaid,
@@ -13,6 +14,7 @@ $(document).ready(function () {
 		//
 		pads = parseFloat($("#pads").val());
 		tampons = parseFloat($("#tampons").val());
+		cycles = parseFloat($("#cycles").val());
 		age = parseFloat($("#age").val());
 
 		runMath();
@@ -28,8 +30,8 @@ $(document).ready(function () {
 });
 
 function runMath() {
-	total = ((((pads * 5.47) + (tampons * 6.97)) * 12) * (51 - age) * taxPaid).toFixed(2);
-	totalPast = ((((pads * 5.47) + (tampons * 6.97)) * 12) * (age - 12) * taxPaid).toFixed(2);
+	total = ((((pads * .15) + (tampons * .19)) * cycles) * (51 - age) * taxPaid).toFixed(2);
+	totalPast = ((((pads * .15) + (tampons * .19)) * cycles) * (age - 12) * taxPaid).toFixed(2);
 
 };
 // shows the final tax paid
