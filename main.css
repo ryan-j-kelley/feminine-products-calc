@@ -173,10 +173,10 @@ html, body {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
     #main-image {
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 700px;
     }
     .main-text {
-        max-width: 800px;
+        max-width: 700px;
         margin: 0 auto;
         padding: 10px;
         line-height: 20px;
@@ -184,10 +184,10 @@ html, body {
     h1, h3 {
         padding: 12px;
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 700px;
     }
     #pullquote {
-        max-width: 800px;
+        max-width: 700px;
         margin: 0 auto;
     }
     #calculator {
@@ -203,10 +203,10 @@ html, body {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
     #main-image {
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 700px;
     }
     .main-text {
-        max-width: 800px;
+        max-width: 700px;
         margin: 0 auto;
         padding: 10px;
         line-height: 20px;
@@ -214,11 +214,11 @@ html, body {
     h1, h3 {
         padding: 12px;
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 700px;
     }
     #pullquote {
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 700px;
+        margin-left: 230px;
     }
     #calculator {
         max-width: 400px;
