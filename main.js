@@ -17,8 +17,12 @@ $(document).ready(function () {
 		cycles = parseFloat($("#cycles").val());
 		age = parseFloat($("#age").val());
 		// stores the numbers entered by the user
-		runMath();
-		showIt();
+		if (taxPaid == 0) {
+			showPhrase();
+		} else {
+			runMath();
+			showIt();
+		}
 		// runs the global functions
 	});
 
@@ -26,6 +30,9 @@ $(document).ready(function () {
 		stateTax = $("#state").find(":selected");
 		taxPaid = stateTax.data("tax");
 		// stores the data attribute from a selection whenever it is changed by the user
+
+		// if the user selects a state with no data-tax value, then show the corresponding message
+
 	});
 });
 
@@ -43,3 +50,7 @@ function showIt() {
 	$("#past").text(totalPast);
 	$("#past-answer").addClass("answer-show");
 };
+
+function showPhrase() {
+	$("#no-answer").addClass("answer-show");
+}
