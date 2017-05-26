@@ -50,7 +50,7 @@ function showIt() {
 	$("#past").text(totalPast);
 	$("#past-answer").addClass("answer-show");
 };
-
+//shows the phrase for when a non-tax state is selected
 function showPhrase() {
 	$("#no-answer").addClass("answer-show");
 }
